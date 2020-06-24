@@ -5,7 +5,12 @@ import { VisibilityFilters } from "../actions";
 const Filters = () => (
     <div>
         <span>Show: </span>
-        <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
+        <FilterLink
+            className="btn btn-outline-secondary"
+            filter={VisibilityFilters.SHOW_ALL}
+        >
+            All
+        </FilterLink>
         <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink>
         <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
             Completed

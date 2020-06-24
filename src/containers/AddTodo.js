@@ -17,8 +17,22 @@ const AddTodo = ({ dispatch }) => {
                     input.value = "";
                 }}
             >
-                <input ref={(node) => (input = node)} />
-                <button type="submit">Add Todo</button>
+                <div className="form-row">
+                    <div className="col-sm-3">
+                        <input
+                            ref={(node) => (input = node)}
+                            className="form-control"
+                        />
+                    </div>
+                    <div className="col-auto">
+                        <button
+                            type="submit"
+                            className="btn btn-outline-secondary"
+                        >
+                            Add Todo
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
     );
